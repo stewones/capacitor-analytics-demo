@@ -1,0 +1,19 @@
+{
+  "appId": "io.capacitor.starter",
+  "appName": "capacitor-analytics-demo",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "plugins": {
+    "PushNotifications": {
+      "presentationOptions": [
+        "badge",
+        "sound",
+        "alert"
+      ]
+    }
+  },
+  "server": {
+    "url": "http://192.168.1.7:8100"
+  }
+}

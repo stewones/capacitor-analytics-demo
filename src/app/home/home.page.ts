@@ -59,4 +59,13 @@ export class HomePage implements OnInit {
       .logEvent({ name: this.event_name, params: params })
       .then(() => alert(`SUCCESS`));
   }
+
+  logEventCustom() {
+    analytics
+      .logEvent({
+        name: 'purchase',
+        params: { items: '[1, 2, 3]', total: 254.5 }
+      })
+      .then(() => alert(`SUCCESS`));
+  }
 }

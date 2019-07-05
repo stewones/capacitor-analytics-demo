@@ -7,18 +7,23 @@
   <ion-button (click)="instance()">Get Instance ID</ion-button>
   <ion-button color="danger" (click)="reset()">Reset Analytics Data</ion-button>
   <br />
+  <br />
   <input type="text" placeholder="screen name" [(ngModel)]="screen_name" />
   <ion-button (click)="setScreen()">Set custom screen name</ion-button>
   <br />
+  <br />
   <input type="text" [(ngModel)]="user_id" />
   <ion-button (click)="setUserID()">Set custom User ID</ion-button>
+  <br />
   <br />
   <input type="text" placeholder="key" [(ngModel)]="user_prop_key" />
   <input type="text" placeholder="key" [(ngModel)]="user_prop_value" />
   <ion-button (click)="setUserProp()">Set custom User Prop</ion-button>
   <br />
+  <br />
   <input type="text" placeholder="event name" [(ngModel)]="event_name" />
   <input type="text" placeholder="key" [(ngModel)]="event_prop_key" />
   <input type="text" placeholder="key" [(ngModel)]="event_prop_value" />
+  <br />
   <ion-button (click)="logEvent()">Log Event</ion-button>
 </ion-content>

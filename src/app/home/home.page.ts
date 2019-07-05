@@ -10,9 +10,9 @@ const analytics = new Analytics();
 export class HomePage implements OnInit {
   screen_name = `My Cooler Screen`;
 
-  user_id = `420`;
-  user_prop_key = `Color`;
-  user_prop_value = `Green`;
+  user_id = `1337`;
+  user_prop_key = `time_spent`;
+  user_prop_value = `4:20`;
 
   event_name = `tap_button`;
   event_prop_key = `times`;

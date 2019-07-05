@@ -23,11 +23,11 @@ export class HomePage implements OnInit {
   ngOnInit() {}
 
   instance() {
-    analytics.instance().then(r => alert(`APP INSTANCE ID -> ${r.id}`));
+    analytics.instance().then(r => alert(r.id));
   }
 
   reset() {
-    analytics.reset().then(() => alert(`ANALYTICS RESETED`));
+    analytics.reset().then(() => alert(`SUCCESS`));
   }
 
   setScreen() {
@@ -35,10 +35,16 @@ export class HomePage implements OnInit {
       .setScreen({
         name: this.screen_name
       })
-      .then(() => alert(`SCREEN HAS BEEN SET`));
+      .then(() => alert(`SUCCESS`));
   }
 
-  setUserID() {}
+  setUserID() {
+    analytics
+      .setUserID({
+        value: this.user_id
+      })
+      .then(() => alert(`SUCCESS`));
+  }
 
   setUserProp() {
     analytics
